@@ -22,6 +22,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="http://www.uva.br/web/dhtmlxCalendar/codebase/skins/dhtmlxcalendar_omega.css">
         <link rel="stylesheet" type="text/css" href="http://www.uva.br/web/dhtmlxCalendar/codebase/dhtmlxcalendar.css">
         <script src="http://www.uva.br/web/dhtmlxCalendar/codebase/dhtmlxcalendar.js"></script>
+
     </head>
     <body>
         <nav class="navbar navbar-default">

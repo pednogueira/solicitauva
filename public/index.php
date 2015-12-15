@@ -20,6 +20,7 @@
     </head>
     <body onload="doOnLoad();">
         <nav class="navbar navbar-default navbar-static-top">
+
         </nav>
         <div class="container">
 
@@ -60,15 +61,15 @@
 
                 <div class="form-group col-md-7 col-sm-3 col-xs-12">   
                     <label>Coordenador Responsável: </label>
-                    <input type="text" name="nome_coordenador" class="form-control" required="required" pattern="[A-Z a-z\s àèìòùâêîôûäëïöüáéíóúãõÀÈÌÒÙÂÊÎÔÛÄËÏÖÜÁÉÍÓÚÃÕç]+$"/>
+                    <input type="text" name="nome_coordenador" class="form-control required" pattern="[A-Z a-z\s àèìòùâêîôûäëïöüáéíóúãõÀÈÌÒÙÂÊÎÔÛÄËÏÖÜÁÉÍÓÚÃÕç]+$"/>
                 </div>
                 <div class="form-group col-md-2 col-sm-2 col-xs-12">   
                     <label>Telefone: </label>
-                    <input type="tel" name="tel_coordenador" class="form-control" required="required"  pattern="[0-9 ()-]+$" id="tel"/>
+                    <input type="tel" name="tel_coordenador" class="form-control required" attern="[0-9 ()-]+$" id="tel"/>
                 </div>
                 <div class="form-group col-md-3 col-sm-3 col-xs-12">   
                     <label>Email: </label>
-                    <input type="email" name="email_coordenador" class="form-control"  required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                    <input type="email" name="email_coordenador" class="form-control required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
                 </div>
 
                 <div class="form-group col-xs-12">
@@ -78,17 +79,17 @@
 
                 <div class="form-group col-md-12 col-sm-12">   
                     <label>Título: </label>
-                    <input type="text" name="nome_evento" class="form-control"  required="required"/>
+                    <input type="text" name="nome_evento" class="form-control required"/>
                 </div>
 
                 <div class="form-group col-md-2 col-sm-4">   
                     <label>Data: </label>
-                    <input type="text" id="inicial" name="inicial" class="form-control"  required="required"/>
+                    <input type="text" id="inicial" name="inicial" class="form-control required"/>
                 </div>
 
                 <div class="form-group col-md-2 col-sm-4">   
                     <label>Hora de Início: </label>
-                    <select  name="horai_evento" class="form-control"  required="required">
+                    <select  name="horai_evento" class="required form-control">
                         <option value="" selected="selected">--</option>
                         <option>6h00</option>
                         <option>6h30</option>
@@ -128,7 +129,7 @@
                 </div>
                 <div class="form-group col-md-2 col-sm-4">   
                     <label>Hora de Término: </label>
-                    <select  name="horaf_evento" class="form-control"  required="required">
+                    <select  name="horaf_evento" class="required form-control">
                         <option value="" selected="selected">--</option>
                         <option>6h00</option>
                         <option>6h30</option>
@@ -168,12 +169,12 @@
                 </div>
                 <div class="form-group col-md-6 col-sm-12">   
                     <label>Observações: </label>
-                    <input type="text" name="observacoes" class="form-control"  required="required"/>
+                    <input type="text" name="observacoes" class="form-control required"/>
                 </div>
 
                 <div class="form-group col-md-3 col-sm-4">   
                     <label>Campus:</label>
-                    <select  name="campus" class="required form-control"  required="required">
+                    <select  name="campus" class="required form-control">
                         <option value="" selected="selected">--</option>
                         <option value="Tijuca">Campus Tijuca</option>
                         <option value="Campus Centro">Campus Centro</option>
@@ -183,13 +184,13 @@
                         <option value="Outros">Outros</option>
                     </select>
                 </div>
-                <div class="form-group col-md-6 col-sm-4" >   
+                <div class="form-group col-md-6 col-sm-4">   
                     <label>Local</label>
-                    <input type="text" name="local" class="form-control"  required="required">
+                    <input type="text" name="local" class="form-control required"/>
                 </div>
                 <div class="form-group col-md-3 col-sm-4">   
                     <label>Valor:</label>
-                    <input type="text" name="valor" class="form-control required" id="valor" placeholder="R$"  required="required">
+                    <input type="text" name="valor" class="form-control required" id="valor" placeholder="R$"/>
                 </div>
 
                 <div class="form-group col-xs-12">
@@ -219,11 +220,11 @@
                 <div class="col-md-3 col-sm-12">   
                     <div class="form-group">
                         <label>Atividade complementar: </label>
-                        <input type="text" name="atComplementar" class="form-control"  required="required"/>
+                        <input type="text" name="atComplementar" class="form-control required"/>
                     </div>
                     <div class="form-group">
                         <label>Público estimado: </label>
-                        <input type="text" name="publicoEstimado" class="form-control"  required="required"/>
+                        <input type="text" name="publicoEstimado" class="form-control required"/>
                     </div>
                 </div>
 
@@ -246,24 +247,24 @@
 
                 <div class="form-group col-sm-12">
                     <label>Objetivo | Descrição | Expectativas: </label>
-                    <textarea class="form-control" rows="5" name="objetivo"  required="required"></textarea>
+                    <textarea class="form-control" rows="5" name="objetivo"></textarea>
                 </div>
 
                 <div class="form-group col-sm-12">
                     <label>Programação completa: </label>
-                    <textarea class="form-control" rows="5" name="progComplementar"  required="required"></textarea>
+                    <textarea class="form-control" rows="5" name="progComplementar"></textarea>
                 </div>
 
                 <div class="form-group col-sm-12">
                     <label>Convidados | Palestrantes - Perfil Profissional: </label>
-                    <textarea class="form-control" rows="5" name="convidados"  required="required"></textarea>
+                    <textarea class="form-control" rows="5" name="convidados"></textarea>
                 </div>
 
                 <div class="form-group col-md-6 col-sm-12">
                     <label>Parceiros | Apoio: </label>
-                    <textarea class="form-control" rows="4" name="parceiros"  required="required"></textarea>
+                    <textarea class="form-control" rows="4" name="parceiros"></textarea>
                     <label>Outras informações: </label>
-                    <textarea class="form-control" rows="4" name="outrasInformacoes"  required="required"></textarea>
+                    <textarea class="form-control" rows="4" name="outrasInformacoes"></textarea>
                 </div>
                 <div class="form-group  col-md-6 col-sm-12">   
                     <label>Forma de divulgação:</label>

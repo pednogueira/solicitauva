@@ -30,6 +30,8 @@ class Leads {
     public $quantCartaz;
     public $quantFilipeta;
     public $outrosDivulgacao;
+    public $datacadastro;
+    public $dataprazo;
 
     function getPara() {
         return $this->para;
@@ -278,4 +280,15 @@ function juntarCheck($f) {
     $m = implode(", ", $f);
     $f = $m;
     return $f;
+}
+
+function calculaPrazo($f) {
+
+    $novadata = explode("/", $f);
+    $dia = $novadata[0];
+    $mes = $novadata[1];
+    $ano = $novadata[2];
+
+    $novadata = date('d/m/Y', mktime(0, 0, 0, $mes, $dia + 5, $ano));
+    return $novadata;
 }

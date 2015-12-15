@@ -32,6 +32,9 @@ $leads->parceiros = $_POST['parceiros'];
 $leads->outrasInformacoes = $_POST['outrasInformacoes'];
 $leads->divulgacao = juntarCheck($_POST['divulgacao']);
 
+$leads->datacadastro = date("d/m/Y");
+$leads->dataprazo = calculaPrazo($leads->datacadastro);
+
 $leads->setQuantFilipeta($_POST['quantFilipeta']);
 $leads->setquantCartaz($_POST['quantCartaz']);
 $leads->setQuantBanner($_POST['quantBanner']);

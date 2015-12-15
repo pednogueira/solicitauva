@@ -2,8 +2,11 @@
 $id = $_GET['id'];
 
 
-$con = mysqli_connect("localhost", "root", "uva123", "fale_conosco");
-$sql = "delete from Leads where id = " . $id;
+//$con = mysqli_connect("localhost", "root", "uva123", "fale_conosco");
+//$sql = "delete from Leads where id = " . $id;
+
+require '../../persistence/conexao.php';
+$sql = "delete from solicitacoes where id = " . $id;
 
 if (mysqli_query($con, $sql)) {
     $msg = "Pedido excluido com sucesso";
