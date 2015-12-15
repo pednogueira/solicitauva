@@ -1,0 +1,94 @@
+body{
+    font-family: "Calibri";
+}
+
+
+.titulo h3{
+    float: right;
+}
+
+#container-1{
+    width: 50% !important;
+    border: 1px solid #E0E0E0;
+    margin-top: 4em;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+#container-1 .header{
+    text-align: center;
+}
+
+#container-1 .header img{
+    margin: auto;
+}
+
+#container-1 .header p{
+    margin: 20px 0px;
+    font-size: 16px;
+}
+
+.line-black{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.line-black p{
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.divisoria{
+    height: 1px;
+    border-bottom: dashed 1px gray;
+    margin: 10px 0;
+}
+
+.box-footer{
+    background: #ebebeb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+
+.small_input{
+    margin-left: 2px;
+    border: none;
+    border-bottom: solid 1px gray;
+}
+
+.margin-left{
+    margin-left: 10px !important;
+}
+
+.radio-choise input{
+    margin-right: 8px !important;
+}
+
+
+
+@media(max-width: 481px){
+    .atividades{
+        margin-top: 10px !important;
+    }
+
+    h3{
+        float: left;
+    }
+
+    #container-1{
+        width: 90% !important;
+        border: 1px solid gray;
+        margin-top: 4em;
+        padding: 2em;
+        border-radius: 5px;
+    }
+
+}

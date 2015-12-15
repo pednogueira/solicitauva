@@ -1,0 +1,120 @@
+body{
+    font-family: "Calibri";
+}
+
+h2 span{
+    float: right;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    color: #adadad;
+}
+.titulo h3{
+    float: right;
+}
+.respondido{
+    color: #00CC33;
+    font-weight: bold;
+}
+
+#container-1{
+    width: 500px !important;
+    border: 1px solid gray;
+    margin-top: 4em;
+    padding: 4em;
+    border-radius: 5px;
+}
+
+.table_p{
+    border: solid 1px #adadad;
+    border-radius: 5px;
+}
+
+.table_p h2{
+    font-size:2em;
+}
+
+.table_pleft{
+    border: solid 1px #adadad;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+
+#container-1 .header{
+    text-align: center;
+}
+
+#container-1 .header img{
+    margin: auto;
+}
+
+#container-1 .header p{
+    margin: 20px 0px;
+    font-size: 16px;
+}
+
+.line-black{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.line-black p{
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.divisoria{
+    height: 1px;
+    border-bottom: dashed 1px gray;
+    margin: 10px 0;
+}
+
+.box-footer{
+    background: #ebebeb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+.small_input{
+    margin-left: 2px;
+    border: none;
+    border-bottom: solid 1px gray;
+}
+
+.margin-left{
+    margin-left: 10px !important;
+}
+
+.radio-choise input{
+    margin-right: 8px !important;
+}
+
+
+@media(max-width: 480px){
+    .atividades{
+        margin-top: 10px !important;
+    }
+
+    h3{
+        float: left;
+    }
+
+}
