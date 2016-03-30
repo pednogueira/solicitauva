@@ -1,4 +1,5 @@
 <?php
+
 // verifica se existe POST ou login e senha. ELSE volta para o login.
 if (!empty($_POST) AND ( empty($_POST['login']) OR empty($_POST['senha']))) {
     header("Location:login.php");

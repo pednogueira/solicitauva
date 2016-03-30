@@ -29,8 +29,7 @@ if (!isset($_SESSION['id']) OR ( $_SESSION['nivel'] < $nivel_adequado)) {
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">  
                         <li class=""><a href="../index.php">Solicitar<span class="sr-only"></span></a></li>
-                        <li class="active"><a href="index.php">Eventos<span class="sr-only"></span></a></li>
-                        <li class=""><a href="faleconosco.php">Fale Conosco (Emails)<span class="sr-only"></span></a></li>
+                        <li class="active"><a href="index.php">Solicitações<span class="sr-only"></span></a></li>
                     </ul>
                 </div>
             </div>
@@ -58,7 +57,6 @@ if (!isset($_SESSION['id']) OR ( $_SESSION['nivel'] < $nivel_adequado)) {
 
                         if (mysqli_num_rows($result) > 0) {
                             while ($row = mysqli_fetch_array($result)) {
-                                
                                 ?>
                                 <tr>
                                     <td><?php echo $row['solicito'] ?></td>

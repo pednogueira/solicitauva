@@ -27,7 +27,7 @@
             <?php
             if (isset($_GET['para']) && isset($_GET['tipo'])) {
                 $para = $_GET['para'];
-                $tipo = "Solicitação de " . $_GET['tipo'];
+                $tipo = $_GET['tipo'];
             } else {
                 $tipo = "";
             }
@@ -61,15 +61,15 @@
 
                 <div class="form-group col-md-7 col-sm-3 col-xs-12">   
                     <label>Coordenador Responsável: </label>
-                    <input type="text" name="nome_coordenador" class="form-control required" pattern="[A-Z a-z\s àèìòùâêîôûäëïöüáéíóúãõÀÈÌÒÙÂÊÎÔÛÄËÏÖÜÁÉÍÓÚÃÕç]+$"/>
+                    <input type="text" name="nome_coordenador" class="form-control required" required="required" pattern="[A-Z a-z\s àèìòùâêîôûäëïöüáéíóúãõÀÈÌÒÙÂÊÎÔÛÄËÏÖÜÁÉÍÓÚÃÕç]+$"/>
                 </div>
                 <div class="form-group col-md-2 col-sm-2 col-xs-12">   
                     <label>Telefone: </label>
-                    <input type="tel" name="tel_coordenador" class="form-control required" attern="[0-9 ()-]+$" id="tel"/>
+                    <input type="tel" name="tel_coordenador" class="form-control required" required="required" attern="[0-9 ()-]+$" id="tel"/>
                 </div>
                 <div class="form-group col-md-3 col-sm-3 col-xs-12">   
                     <label>Email: </label>
-                    <input type="email" name="email_coordenador" class="form-control required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                    <input type="email" name="email_coordenador" class="form-control required" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
                 </div>
 
                 <div class="form-group col-xs-12">
@@ -79,17 +79,17 @@
 
                 <div class="form-group col-md-12 col-sm-12">   
                     <label>Título: </label>
-                    <input type="text" name="nome_evento" class="form-control required"/>
+                    <input type="text" name="nome_evento" class="form-control required" required="required"/>
                 </div>
 
                 <div class="form-group col-md-2 col-sm-4">   
                     <label>Data: </label>
-                    <input type="text" id="inicial" name="inicial" class="form-control required"/>
+                    <input type="text" id="inicial" name="inicial" class="form-control required" required="required"/>
                 </div>
 
                 <div class="form-group col-md-2 col-sm-4">   
                     <label>Hora de Início: </label>
-                    <select  name="horai_evento" class="required form-control">
+                    <select  name="horai_evento" class="required form-control" required="required">
                         <option value="" selected="selected">--</option>
                         <option>6h00</option>
                         <option>6h30</option>
@@ -129,7 +129,7 @@
                 </div>
                 <div class="form-group col-md-2 col-sm-4">   
                     <label>Hora de Término: </label>
-                    <select  name="horaf_evento" class="required form-control">
+                    <select  name="horaf_evento" class="required form-control" required="required">
                         <option value="" selected="selected">--</option>
                         <option>6h00</option>
                         <option>6h30</option>
@@ -184,12 +184,12 @@
                         <option value="Outros">Outros</option>
                     </select>
                 </div>
-                <div class="form-group col-md-6 col-sm-4">   
+                <div class="form-group col-md-3 col-sm-4">   
                     <label>Local</label>
                     <input type="text" name="local" class="form-control required"/>
                 </div>
-                <div class="form-group col-md-3 col-sm-4">   
-                    <label>Valor:</label>
+                <div class="form-group col-md-6 col-sm-4" required="required">   
+                    <label>Valores:</label>
                     <input type="text" name="valor" class="form-control required" id="valor" placeholder="R$"/>
                 </div>
 
@@ -247,12 +247,12 @@
 
                 <div class="form-group col-sm-12">
                     <label>Objetivo | Descrição | Expectativas: </label>
-                    <textarea class="form-control" rows="5" name="objetivo"></textarea>
+                    <textarea class="form-control" rows="5" name="objetivo" required="required"></textarea>
                 </div>
 
                 <div class="form-group col-sm-12">
                     <label>Programação completa: </label>
-                    <textarea class="form-control" rows="5" name="progComplementar"></textarea>
+                    <textarea class="form-control" rows="5" name="progComplementar" required="required"></textarea>
                 </div>
 
                 <div class="form-group col-sm-12">

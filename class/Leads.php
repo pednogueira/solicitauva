@@ -276,10 +276,11 @@ class Leads {
 }
 
 function juntarCheck($f) {
-
-    $m = implode(", ", $f);
-    $f = $m;
-    return $f;
+    if ($f != "") {
+        $m = implode(", ", $f);
+        $f = $m;
+        return $f;
+    }
 }
 
 function calculaPrazo($f) {

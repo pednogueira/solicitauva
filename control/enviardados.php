@@ -2,10 +2,20 @@
 require '../class/Leads.php';
 require 'insereSolicita.php';
 
+
+
 $leads = new Leads();
 
 $leads->para = $_POST['para'];
 $leads->solicito = $_POST['solicito'];
+
+if ($leads->para == "Departamento Offline") {
+    $to = "#";
+    $subject = "Solicitação ao Marketing";
+} else {
+    $to = "pedro.silvestre@uva.br";
+    $subject = "Solicitação ao Marketing";
+}
 
 $leads->nome_coordenador = $_POST['nome_coordenador'];
 $leads->tel_coordenador = $_POST['tel_coordenador'];
@@ -40,8 +50,12 @@ $leads->setquantCartaz($_POST['quantCartaz']);
 $leads->setQuantBanner($_POST['quantBanner']);
 $leads->setOutrosDivulgacao($_POST['outrosDivulgacao']);
 
+$message = "Chegou mais uma demanta para você de solicitação de marketing.";
+
 
 if (insereSolicita($con, $leads)) {
+
+    mail($to, $subject, $message);
     $msg = "Enviado com sucesso";
 } else {
     $msg = "Erro ao enviar";
